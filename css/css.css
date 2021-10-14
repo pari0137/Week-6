@@ -55,6 +55,9 @@ table {
 
 html{
     font-size: 22px;
+    /* set a default font family for the page
+    always provide a list of fonts as a fall back option - eend with a generic font type */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
@@ -93,6 +96,17 @@ body{
 .using-percent{
     /* percentresponds to the elements parents, in this case the element with the class .using-viewport */
     background-color: pink;
-    width:50%;
+    width:80%;
     height:50%;
+
+    /* CSS Typography Options */
+     font-size: 16px;  /* you can set the font size using any unit of measurment - usually it is set with px, em, or rem */
+      line-height: 1.3em; /* line height is often set using ems, so its relative to the size of the font */
+
+       font-weight: bold; /* font weight is how thick the font is */
+        font-style:italic; /* font style adds things like italics */
+
+         letter-spacing: 0.1em; /* set the space between the letters (kerning) */
+          text-decoration: underline;  /* if you want to remove underline from links, set
+          text decoration to none */
 }
