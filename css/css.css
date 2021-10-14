@@ -62,6 +62,12 @@ html{
 
 body{
     background-color: aquamarine;
+
+    /* apply a background image */
+    background-image:url("../images/white_brick_wall.png");
+    /* control how the background repeats */
+    background-repeat: no-repeat;
+
 }
 
 /* use a class to target an elelment with a . */
@@ -91,6 +97,12 @@ body{
     background-color: purple;
     width:40vw;
     height:40vh;
+
+    /* positioning a background */
+    background-image:url("../images/bread.jpg");
+    /* control the spot a background image starts */
+    background-position: 40px 20px; /* sets the horizontal then vertical position of the image */
+    background-repeat: no-repeat;
 }
 
 .using-percent{
@@ -109,4 +121,26 @@ body{
          letter-spacing: 0.1em; /* set the space between the letters (kerning) */
           text-decoration: underline;  /* if you want to remove underline from links, set
           text decoration to none */
+}
+
+/* apply CSS to multiple elements by listing them with a comma */
+.image-contain, .image-cover{
+    border: black 3px solid;
+    width:50vw;
+    height:20vh;
+    background-image:url("../images/bread.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+/* background-size allows you to scale the background - either with a fixed value, cover, or contain */
+
+.image-contain{
+    /* contain scales the background image so it's always inside the element */
+    background-size: contain;
+}
+
+.image-cover{
+    /* cover scales the background image so its always covering the element */
+    background-size:cover;
 }
